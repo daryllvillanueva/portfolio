@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { baseImgUrl } from '../../helpers/functions-general'
 import { Link } from 'react-router-dom'
-import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
-import { FaFilePdf } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa";
+
 
 const Banner = () => {
   return (

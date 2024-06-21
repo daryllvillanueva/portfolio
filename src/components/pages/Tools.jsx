@@ -3,8 +3,8 @@ import { FaArrowDown } from 'react-icons/fa'
 
 const Tools = () => {
   return (
-    <div className='relative py-16 lg:py-0'>
-      <div className='h-[70vh] lg:h-screen max-w-[60rem] mx-auto grid place-content-center'>
+    <div className='relative py-6 lg:py-0'>
+      <div className='h-screen max-w-[60rem] mx-auto grid place-content-center'>
         <h1 className='text-white text-5xl lg:text-7xl font-kanit_sb mb-16 text-center'>Tech Tools</h1>
         <div className='flex flex-wrap justify-center items-center gap-10'>
           <div className='overflow-hidden p-2'>
