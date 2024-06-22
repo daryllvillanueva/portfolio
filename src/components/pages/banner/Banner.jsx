@@ -8,11 +8,11 @@ const Banner = () => {
     <main className='h-screen animate-fade-in'>
       <div className='h-full w-full max-w-[90rem] flex flex-col lg:flex-row justify-evenly items-center gap-5 lg:gap-0 px-3'>
         <div className='flex flex-col gap-3 items-center w-full text-center lg:text-start lg:items-start lg:w-auto order-2 lg:order-1'>
-          <h1 className='font-kanit_sb'>
-            <span className='text-2xl sm:text-4xl text-white/90'>Hello, I'm </span>
-            <span className='block text-4xl sm:text-5xl md:text-6xl gradient-text'>Daryll Villanueva!</span>
+          <h1>
+            <span className='text-2xl sm:text-4xl text-white/90 font-semibold font-kanit_sb'>Hello, I'm </span>
+            <span className='block text-4xl sm:text-5xl md:text-6xl gradient-text font-semibold font-kanit_sb'>Daryll Villanueva!</span>
           </h1>
-          <p className='text-lg sm:text-xl max-w-[30rem] font-kanit_m text-white/80 tracking-wider text-center lg:text-left'>
+          <p className='text-lg sm:text-xl max-w-[30rem] font-medium text-white/80 tracking-wider text-center lg:text-left font-kanit_m'>
             My passion lies in crafting websites that not only captivate users but also provide seamless functionality. I'm a fresh grad that strive to create digital experiences that are both visually appealing and highly efficient.
           </p>
         </div>

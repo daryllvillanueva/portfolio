@@ -24,7 +24,7 @@ const Header = () => {
             </Link>
 
             <nav className='desktop_nav hidden md:block'>
-              <ul className='flex items-center gap-5 text-lg px-3 text-white'>
+              <ul className='flex items-center gap-5 text-lg px-3 text-white font-kanit_m'>
                 <Navigation/>
               </ul>
             </nav>
