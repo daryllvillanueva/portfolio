@@ -3,10 +3,9 @@ import { baseImgUrl } from '../../helpers/functions-general'
 import { Link } from 'react-router-dom'
 import { FaArrowDown } from "react-icons/fa";
 
-
 const Banner = () => {
   return (
-    <main className='h-screen animate-fade-in relative'>
+    <main className='h-screen animate-fade-in'>
       <div className='h-full w-full max-w-[90rem] flex flex-col lg:flex-row justify-evenly items-center gap-5 lg:gap-0 px-3'>
         <div className='flex flex-col gap-3 items-center w-full text-center lg:text-start lg:items-start lg:w-auto order-2 lg:order-1'>
           <h1 className='font-kanit_sb'>
@@ -21,9 +20,6 @@ const Banner = () => {
           <img src={`${baseImgUrl}/about_pic.png`} alt="profile" loading="lazy" className='object-cover object-center w-full h-full rounded-full'/>
         </div>
       </div>
-      <button className='absolute top-[93%] left-[48%] text-white hidden lg:block'>
-        <FaArrowDown className='size-9'/>
-      </button>
     </main>
   )
 }

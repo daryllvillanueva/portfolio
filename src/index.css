@@ -8,6 +8,7 @@
     font-weight: 400;
     font-display: swap;
     src: url(/fonts/Kanit-Regular.woff2) format("woff2"),
+         url(/fonts/Kanit-Regular.woff) format("woff"),
 }
 @font-face {
     font-family: 'Kanit-Medium';
@@ -15,6 +16,7 @@
     font-weight: 500;
     font-display: swap;
     src: url(/fonts/Kanit-Medium.woff2) format("woff2"),
+         url(/fonts/Kanit-Medium.woff) format("woff")
 }
 @font-face {
     font-family: 'Kanit-Semibold';
@@ -22,10 +24,13 @@
     font-weight: 600;
     font-display: swap;
     src: url(/fonts/Kanit-Semibold.woff2) format("woff2"),
+         url(/fonts/Kanit-Semibold.woff) format("woff")
 }
 
-
 @layer base{
+    body {
+        @apply font-kanit 
+    }
 }
 @layer components{
     .gradient-text {

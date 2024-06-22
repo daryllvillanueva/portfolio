@@ -19,7 +19,7 @@ const Header = () => {
             <Link to={"/"}>
             <h1 className='font-semibold text-2xl relative bg-gradient-to-r from-[#7c75f4] to-[#76a9f8] bg-clip-text text-transparent'>
               DARYLL
-              <span className='text-[0.5rem] inline-block absolute top-[0.4rem] right-0 transform translate-x-[0.45rem] bg-gradient-to-r from-[#7c75f4] to-[#76a9f8] bg-clip-text text-transparent'>●</span>
+              <span className='absolute text-[0.8rem] top-[0.35rem] -right-2 bg-gradient-to-r from-[#7c75f4] to-[#76a9f8] bg-clip-text text-transparent'>●</span>
             </h1>
             </Link>
 
@@ -30,15 +30,15 @@ const Header = () => {
             </nav>
 
             <ul className='flex gap-5 items-center text-white'>
-                <li><Link to={"#"} target='_blank'><FaGithubSquare className='size-7 md:size-8 hover:text-white/65'/></Link></li>
-                <li><Link><FaLinkedin className='size-7 md:size-8 hover:text-white/65'/></Link></li>
-                <li><Link><FaEnvelope className='size-7 md:size-8 hover:text-white/65'/></Link></li>
+                <li><Link to={"#"} target='_blank'><FaGithubSquare className='size-7 md:size-7 hover:text-white/65'/></Link></li>
+                <li><Link><FaLinkedin className='size-7 md:size-7 hover:text-white/65'/></Link></li>
+                <li><Link><FaEnvelope className='size-7 md:size-7 hover:text-white/65'/></Link></li>
                 {/* <li><Link to='/CV-VILLANUEVA.pdf' target='_blank'><FaFilePdf className='size-6 md:size-7 hover:text-white/65'/></Link></li> */}
             </ul>
 
             <div className='mobile_nav md:hidden'>
               <ul className={`${showNav ? 'right-0' : '-right-full'} flex flex-col pt-12 gap-3 justify-center overflow-hidden
-              w-[10rem] h-[30vh] items-center absolute top-0 bg-white/50 rounded-bl-xl transition-all duration-300 z-[99]`}>
+              w-[10rem] h-[30vh] items-center absolute top-0 bg-white/50 rounded-bl-xl transition-all duration-300`}>
                 <Navigation/>
               </ul>
             </div>
@@ -46,8 +46,6 @@ const Header = () => {
             <button className='burger z-50 block md:hidden' type="button" onClick={handleShowNav}>
                 {showNav ? <LiaTimesSolid className='text-white size-7 md:size-8'/> : <RxHamburgerMenu className='text-white size-7 md:size-8'/>}
             </button>
-
-
           </div>
         </div>
       </header>
