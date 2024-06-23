@@ -5,7 +5,7 @@ const Tools = () => {
   return (
     <>
       <div className='h-[100vh] max-w-[70rem] mx-auto grid place-content-center py-6 lg:py-0'>
-        <h1 className='text-white text-5xl lg:text-7xl font-kanit_sb font-semibold mb-12 lg:mb-16 text-center'>Tech Tools</h1>
+        <h1 className='text-white text-5xl lg:text-7xl font-kanit_m font-semibold mb-12 lg:mb-16 text-center'>Tech Tools</h1>
         <div className='flex flex-wrap justify-center items-center gap-10'>
           <div className='overflow-hidden p-2'>
             <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='group transition-transform duration-500 hover:scale-105 size-[100px] lg:size-[150px]'>
