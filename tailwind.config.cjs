@@ -20,7 +20,7 @@ module.exports = {
       fontFamily: {
         'kanit': ["Kanit", "Open Sans", "Arial", "sans-serif"],
         'kanit_m': ["Kanit-Medium", "Open Sans", "Arial", "sans-serif"],
-        'kanit_sb': ["Kanit-Semibold", "Open Sans", "Arial", "sans-serif"],
+        // 'kanit_sb': ["Kanit-Semibold", "Open Sans", "Arial", "sans-serif"],
       },
       keyframes: {
         'roll-right': {
