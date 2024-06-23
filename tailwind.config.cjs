@@ -18,9 +18,9 @@ module.exports = {
         'button': '-2px -2px 4px #000, 3px 4px 2px #fff'
       },
       fontFamily: {
-        'kanit': "Kanit" ,
-        'kanit_m': "Kanit-Medium",
-        'kanit_sb': "Kanit-Semibold"
+        'kanit': ["Kanit", "Open Sans", "Arial", "sans-serif"],
+        'kanit_m': ["Kanit-Medium", "Open Sans", "Arial", "sans-serif"],
+        'kanit_sb': ["Kanit-Semibold", "Open Sans", "Arial", "sans-serif"],
       },
       keyframes: {
         'roll-right': {
