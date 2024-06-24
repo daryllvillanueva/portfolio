@@ -21,13 +21,13 @@ const Home = () => {
       <Header/>
       <section className='banner relative py-4 sm:py-0' id='banner'>
         <Banner/>
-        <button type='button' className='absolute bottom-0 lg:bottom-3 left-1/2 hidden md:block' onClick={() => scrollToElement("tools")}>
+        <button type='button' className='absolute bottom-0 lg:bottom-3 left-[49%] hidden md:block' onClick={() => scrollToElement("tools")}>
           <FaArrowDown className='text-white size-9'/>
         </button>
       </section>
       <section className='tools relative pt-[2rem] sm:pt-0' id='tools'>
         <Tools scrollToElement={scrollToElement}/>
-        <button type='button' className='absolute bottom-4 left-1/2 hidden md:block' onClick={() => scrollToElement("projects")}>
+        <button type='button' className='absolute bottom-4 left-[49%] hidden md:block' onClick={() => scrollToElement("projects")}>
           <FaArrowDown className='text-white size-9'/>
         </button>
       </section>
