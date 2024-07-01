@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = ({scrollToElement}) => {
   return (
     <>
       <li>
-        <button>About</button>
+        <button onClick={() => scrollToElement("about")}>About</button>
       </li>
       <li>
         <button>Projects</button>

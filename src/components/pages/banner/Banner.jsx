@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { baseImgUrl } from '../../helpers/functions-general'
 
 const Banner = () => {

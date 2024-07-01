@@ -2,8 +2,8 @@ import React from 'react'
 import { PageTitle, baseImgUrl } from '../helpers/functions-general'
 import Banner from './banner/Banner'
 import Header from '../partials/Header'
-import Tools from './Tools'
 import { FaArrowDown } from "react-icons/fa";
+import About from './about/About'
 
 const Home = () => {
   PageTitle("Daryll - Portfolio");
@@ -18,15 +18,15 @@ const Home = () => {
   }
   return (
     <main className='bg-black'>
-      <Header/>
+      <Header scrollToElement={scrollToElement}/>
       <section className='banner relative py-4 sm:py-0' id='banner'>
         <Banner/>
-        <button type='button' className='absolute bottom-0 lg:bottom-3 left-[49%] hidden md:block' onClick={() => scrollToElement("tools")}>
+        <button type='button' className='absolute bottom-0 lg:bottom-3 left-[49%] hidden md:block' onClick={() => scrollToElement("about")}>
           <FaArrowDown className='text-white size-9'/>
         </button>
       </section>
-      <section className='tools relative pt-[2rem] sm:pt-0' id='tools'>
-        <Tools scrollToElement={scrollToElement}/>
+      <section className='about relative pt-[2rem] sm:pt-0' id='about'>
+        <About/>
         <button type='button' className='absolute bottom-4 left-[49%] hidden md:block' onClick={() => scrollToElement("projects")}>
           <FaArrowDown className='text-white size-9'/>
         </button>

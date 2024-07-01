@@ -25,7 +25,23 @@
         @apply bg-gradient-to-r from-[#7c75f4] to-[#76a9f8] bg-clip-text text-transparent animate-gradient;
         background-size: 200% 200%;
     }
-    
+
+    .desktop_nav {
+        ul {
+            button {
+                @apply hover:text-gray-400
+            }
+        }
+    }
+
+    .mobile_nav {
+        ul {
+            button {
+                @apply text-white text-2xl hover:text-gray-400
+            }
+        }
+    }
+        
 }
 @layer utilities{
 }
