@@ -45,3 +45,7 @@
 }
 @layer utilities{
 }
+
+.slick-track {
+    @apply flex gap-5 !important;
+}
