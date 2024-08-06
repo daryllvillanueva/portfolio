@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
-    <div className='py-16 text-white'>
-      <h1 className='text-5xl lg:text-7xl font-kanit_m font-semibold text-center gradient-text'>Projects</h1>
+    <div className='sm:py-16 px-5'>
+      <h1 className='text-5xl lg:text-7xl font-kanit_m font-semibold text-center gradient-text'>Portfolio</h1>
       <div className='flex flex-wrap justify-center my-10 p-10 gap-5'>
         <div className='w-[25rem] h-[30rem] rounded-lg'>
           <img src={`${baseImgUrl}/homely-main.jpg`} alt="" className="rounded-lg h-full"/>

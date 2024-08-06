@@ -5,6 +5,7 @@ import Header from '../partials/Header'
 import { FaArrowDown } from "react-icons/fa";
 import About from './about/About'
 import Projects from './projects/Projects';
+import Contact from './contact/Contact';
 
 const Home = () => {
   PageTitle("Daryll - Portfolio");
@@ -35,11 +36,12 @@ const Home = () => {
         </button>
       </section>
 
-      <section className='projects relative pt-[2rem] sm:pt-0' id='projects'>
+      <section className='projects relative pt-[2rem] sm:pt-0 border-b border-line' id='projects'>
         <Projects/>
-        <button type='button' className='absolute bottom-4 left-[49%] hidden md:block' onClick={() => scrollToElement("")}>
-          <FaArrowDown className='text-white size-9'/>
-        </button>
+      </section>
+
+      <section className='contact relative pt-[2rem] sm:pt-0' id='contact'>
+        <Contact/>
       </section>
     
     </main>

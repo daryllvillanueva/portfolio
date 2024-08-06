@@ -8,10 +8,10 @@ const Navigation = ({scrollToElement}) => {
         <button onClick={() => scrollToElement("about")}>About</button>
       </li>
       <li>
-        <button onClick={() => scrollToElement("projects")}>Projects</button>
+        <button onClick={() => scrollToElement("projects")}>Portfolio</button>
       </li>
       <li>
-        <button>Contact</button>
+        <button onClick={() => scrollToElement("contact")}>Contact</button>
       </li>
     </>
   )
