@@ -8,11 +8,6 @@ const Info = () => {
         </div>
         <ul className='flex flex-col font-kanit_m gap-3 md:gap-4 sm:items-center lg:items-start text-white'>
             <li className='text-xl sm:text-2xl lg:text-[1.7rem]'>📍 Philippines</li>
-            <li className='text-xl sm:text-2xl lg:text-[1.7rem]'>📖 BS in Information Technology
-                <span className='block ml-0 md:ml-8 text-xl sm:text-2xl lg:text-[1.7rem]'>De La Salle Lipa (2020 - 2024)</span>
-            </li>
-            <li className='text-xl sm:text-2xl lg:text-[1.7rem]'>🎮 I love playing Dota 2 and FPS games</li>
-            <li className='text-xl sm:text-2xl lg:text-[1.7rem]'>😣 My weakness is communication</li>
             <li className='text-xl sm:text-2xl lg:text-[1.7rem] sm:text-center xs:text-left lg:text-left'>💪 My strengths are eager to learn and resilient</li>
         </ul>
     </div>
