@@ -3,7 +3,7 @@ import { baseImgUrl } from '../../helpers/functions-general'
 
 const Banner = () => {
   return (
-    <main className='sm:h-screen animate-fade-in' >
+    <main className='h-[93vh] sm:h-screen animate-fade-in' >
       <div className='h-full w-full max-w-[90rem] flex flex-col lg:flex-row justify-evenly items-center px-3'>
         <div className='flex flex-col gap-4 items-center w-full text-center lg:text-start lg:items-start lg:w-auto order-2 lg:order-1'>
           <div>

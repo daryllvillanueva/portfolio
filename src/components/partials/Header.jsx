@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaTimesSolid } from "react-icons/lia";
-import { FaEnvelope, FaFilePdf, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 const Header = ({scrollToElement}) => {
   const [showNav, setShowNav] = React.useState(false)
@@ -29,13 +27,6 @@ const Header = ({scrollToElement}) => {
               </ul>
             </nav>
 
-            {/* <ul className='flex gap-5 items-center text-white'>
-                <li><Link to={"https://github.com/daryllvillanueva"} target='_blank'><FaGithubSquare className='size-6 md:size-7 hover:text-gray-400'/></Link></li>
-                <li><Link to={"https://www.linkedin.com/in/daryll-villanueva/"} target='_blank'><FaLinkedin className='size-6 md:size-7 hover:text-gray-400'/></Link></li>
-                <li><Link to={"mailto:darylljvillanueva@gmail.com"} target='_blank'><FaEnvelope className='size-6 md:size-7 hover:text-gray-400'/></Link></li>
-                <li><Link to='/CV-VILLANUEVA.pdf' target='_blank'><FaFilePdf className='size-6 md:size-7 hover:text-white/65'/></Link></li>
-            </ul> */}
-  
             <button className='burger z-50 block md:hidden' type="button" onClick={handleShowNav}>
                 {showNav ? <LiaTimesSolid className='text-white size-6 md:size-8'/> : <RxHamburgerMenu className='text-white size-6 md:size-8'/>}
             </button>
