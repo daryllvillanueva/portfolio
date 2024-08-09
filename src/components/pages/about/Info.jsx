@@ -7,8 +7,9 @@ const Info = () => {
             <img src="../../img/about_me.jpg" alt="" className='h-full w-full rounded-md'/>
         </div>
         <ul className='flex flex-col font-kanit_m gap-3 md:gap-4 sm:items-center lg:items-start text-white'>
-            <li className='text-xl sm:text-2xl lg:text-[1.7rem]'>📍 Philippines</li>
-            <li className='text-xl sm:text-2xl lg:text-[1.7rem] sm:text-center xs:text-left lg:text-left'>💪 My strengths are eager to learn and resilient</li>
+            <li className='text-xl sm:text-2xl lg:text-[1.7rem] text-center sm:text-center lg:text-left'>📍 Philippines</li>
+            <li className='text-xl sm:text-2xl lg:text-[1.7rem] text-center sm:text-center lg:text-left'>💪 My strengths are eager to learn and resilient</li>
+            <li className='text-xl sm:text-2xl lg:text-[1.7rem] text-center sm:text-center lg:text-left'>😋 My favorite food is any type of Adobo</li>
         </ul>
     </div>
   )
