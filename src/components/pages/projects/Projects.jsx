@@ -28,7 +28,7 @@ const Projects = () => {
               <p className='text-gray-300 text-base mt-1 tracking-wide xs:line-clamp-4 sm:line-clamp-[8]'>Finding your perfect home should feel as comfortable as stepping into your own living room. Our user-friendly platform offers a comprehensive selection of real estate options, whether you’re looking to buy, rent, or explore properties. Discover a diverse array of houses for sale, tailored to fit every lifestyle and budget.</p>
             </div>
             <div className='flex gap-5 mt-3 sm:mt-8 justify-center'>
-              <Link to={"https://ronk-0.github.io/tw-homely/dist/index"} target='_blank' className='border py-1 px-2 text-xs sm:text-xl hover:bg-white/10 rounded-md'>Live Demo</Link>
+              <Link to={"https://wp-homely.netlify.app"} target='_blank' className='border py-1 px-2 text-xs sm:text-xl hover:bg-white/10 rounded-md'>Live Demo</Link>
               <Link to={"https://github.com/RonK-0/tw-homely"} target='_blank' className='border py-1 px-2 text-xs sm:text-xl hover:bg-white/10 rounded-md'>Source Code</Link>
             </div>
           </div>
