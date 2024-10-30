@@ -10,7 +10,7 @@ const Header = ({scrollToElement, isToggled, handleToggled}) => {
 
   return (
     <header className='fixed top-0 left-0 w-screen z-20 h-14 flex items-center lg:justify-between border-b bg-card padding'>
-        <button className='font-kodchasan_B text-primary text-3xl hidden lg:flex' onClick={() => scrollToElement("home")}>Daryll</button>
+        <button className='font-kodchasan_M text-primary text-3xl hidden lg:flex' onClick={() => scrollToElement("home")}>daryll</button>
         <nav className='lg:hidden flex items-center justify-between w-full'>
           <button className='font-kodchasan_M text-primary text-2xl' onClick={() => scrollToElement("home")}>Daryll</button>
           <div className='flex items-center gap-2 sm:gap-3 font-kodchasan_R'>

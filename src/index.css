@@ -104,7 +104,7 @@
     @apply bg-background text-foreground;
   }
 
-  .dark body {
+  .dark {
     @apply transition-colors duration-300 ease-in-out;
   }
   .padding {
