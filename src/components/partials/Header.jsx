@@ -6,17 +6,27 @@ import { Button } from '../ui/button';
 import { HiOutlineMenu } from "react-icons/hi";
 import { BsSun } from "react-icons/bs";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+
 const Header = ({scrollToElement, isToggled, handleToggled, setActiveItem, activeItem}) => {
+  const [open, setOpen] = useState(false);
   return (
     <header className='fixed top-0 left-0 w-screen z-20 h-14 flex items-center lg:justify-between border-b bg-card padding'>
-        <button className='font-kodchasan_M text-primary text-3xl hidden lg:flex' onClick={() => scrollToElement("home")}>daryll</button>
+        <button className='font-kodchasan_M text-primary text-3xl hidden lg:flex' onClick={() => scrollToElement("home")}>Daryll</button>
         <nav className='lg:hidden flex items-center justify-between w-full'>
           <button className='font-kodchasan_M text-primary text-2xl' onClick={() => scrollToElement("home")}>Daryll</button>
           <div className='flex items-center gap-2 sm:gap-3 font-kodchasan_R'>
-            <Button variant="default" size="md" className="text-sm">Contact</Button>
-            <Link target='_blank' to="https://github.com/daryllvillanueva">
-              <Button variant="ghost" size="icon"><FaGithub className='text-primary header'/></Button>
-            </Link>
+            <Button variant="default" size="md" className="text-sm" onClick={() => { scrollToElement('contact'); setActiveItem('contact'); }}>
+              Contact
+            </Button>
             <Button variant="ghost" size="icon" onClick={handleToggled}>
               {isToggled ? (
                 <BsSun className='text-primary header'/>
@@ -26,16 +36,32 @@ const Header = ({scrollToElement, isToggled, handleToggled, setActiveItem, activ
                 </svg> 
               )}   
             </Button>
-            <Button variant="ghost" size="icon"><HiOutlineMenu className='text-primary header'/></Button>
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <HiOutlineMenu className='text-primary header'/>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <SheetHeader className="hidden">
+                  <SheetTitle>Navigation Menu</SheetTitle>
+                  <SheetDescription>
+                    Please select an option from the menu below.
+                  </SheetDescription> 
+                </SheetHeader>
+                <ul className='grid place-content-center justify-center gap-4 text-xl sm:text-2xl text-muted-foreground font-kodchasan_R h-full text-center'>
+                  <Navigation scrollToElement={scrollToElement} activeItem={activeItem} setActiveItem={setActiveItem} onClose={() => setOpen(false)}/>
+                </ul>
+              </SheetContent>
+            </Sheet>
           </div>
         </nav>
-        <ul className='hidden lg:flex items-center gap-8 text-sm text-muted-foreground font-kodchasan_R'>
+        <ul className='hidden lg:flex items-center gap-7 text-sm text-muted-foreground font-kodchasan_R'>
           <Navigation scrollToElement={scrollToElement} activeItem={activeItem} setActiveItem={setActiveItem}/>
           <div className='flex items-center gap-2'>
-            <Button variant="default" size="md" className="text-sm">Contact</Button>
-            <Link target='_blank' to="https://github.com/daryllvillanueva">
-              <Button variant="ghost" size="icon"><FaGithub className='text-primary header'/></Button>
-            </Link>
+            <Button variant="default" size="md" className="text-sm" onClick={() => { scrollToElement('contact'); setActiveItem('contact'); }}>
+              Contact
+            </Button>
             <Button variant="ghost" size="icon" onClick={handleToggled}>
               {isToggled ? (
                 <BsSun className='text-primary header'/>
