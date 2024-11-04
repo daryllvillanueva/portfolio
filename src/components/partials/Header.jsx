@@ -14,6 +14,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Socials from './Socials';
 
 
 const Header = ({scrollToElement, isToggled, handleToggled, setActiveItem, activeItem}) => {
@@ -49,9 +50,14 @@ const Header = ({scrollToElement, isToggled, handleToggled, setActiveItem, activ
                     Please select an option from the menu below.
                   </SheetDescription> 
                 </SheetHeader>
-                <ul className='grid place-content-center justify-center gap-4 text-xl sm:text-2xl text-muted-foreground font-kodchasan_R h-full text-center'>
+                <ul className='flex flex-col justify-center gap-4 text-center text-xl sm:text-2xl text-muted-foreground font-kodchasan_R h-full'>
                   <Navigation scrollToElement={scrollToElement} activeItem={activeItem} setActiveItem={setActiveItem} onClose={() => setOpen(false)}/>
+                  <ul className='flex items-center justify-center gap-4 mt-6'>
+                    <Socials/>
+                  </ul>
                 </ul>
+
+
               </SheetContent>
             </Sheet>
           </div>

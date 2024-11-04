@@ -94,8 +94,8 @@ const Home = () => {
         <section id='contact'>
           <Contact/>
         </section>
-        <Button variant="outline" size="md" onClick={() => { scrollToElement('banner')}} className="absolute bottom-5 right-10">
-          <GoArrowUp className='text-primary github'/>
+        <Button variant="default" size="md" onClick={() => { scrollToElement('banner')}} className="absolute bottom-5 right-10">
+          <GoArrowUp className='text-card header'/>
         </Button>
     </main>
   )
